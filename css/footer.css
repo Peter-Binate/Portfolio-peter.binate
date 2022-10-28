@@ -1,0 +1,103 @@
+@import "./body.css";
+
+footer {
+    width: 100%;
+    background-color: #1B262F;
+    /*font-family: 'Fredoka';*/
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.brand {
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+
+footer ul {
+    list-style: none;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .menu li {
+    display: inline-block;
+    margin: 0.7em;
+    text-align: center;
+}
+
+.brand,
+.footer .menu a,
+.contact-infos-content li {
+    font-weight: 500;
+}
+
+.footer .media-icons {
+    margin: 1em 0;
+}
+
+.media-icons li {
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+.contact-infos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.contact-infos-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-infos-content span {
+    margin-bottom: 0.2em;
+}
+
+.contact-infos-content span i {
+    margin-right: 0.5em;
+}
+
+.media-icons a {
+    font-size: 1.1em;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 35px;
+    height: 35px;*/
+    background-color: #0d2033;
+    border-radius: 2px;
+    line-height: 35px;
+}
+
+.footer .creative-commons {
+    background-color: #141D23;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .creative-commons small {
+    font-size: calc(15 * var(--res));
+}
+
+@media screen and (max-width: 540px) {
+    .footer .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

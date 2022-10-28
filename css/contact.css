@@ -1,0 +1,215 @@
+@import "./body.css";
+
+.contact {
+    background: radial-gradient(38.61% 182.5% at 30.84% 37.95%, #1D334A 3.36%, #373951 46.87%, #2A3248 66.79%, #1C334A 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0 200px 0;
+}
+
+.container {
+    max-width: 1050px;
+    width: 100%;
+    background: var(--section-background-color);
+    border-radius: 12px;
+    margin: 0 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .image-box {
+    max-width: 55%;
+}
+
+.content .image-box img {
+    width: 100%;
+}
+
+.content .topic {
+    font-size: calc(22 * var(--res));
+    font-weight: 500;
+}
+
+.contact form {
+    width: 40%;
+    margin-right: 30px;
+}
+
+.contact .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 16px 0;
+    position: relative;
+}
+
+.content .input-box input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 16px;
+    border-radius: 6px;
+    outline: none;
+    font-size: calc(16 * var(--res));
+    background-color: var(--section-background-color);
+    border: 2px solid var(--font-text-color);
+    transition: all 0.3s ease;
+    color: var(--font-text-color);
+}
+
+.input-anim {
+    transition: border 0.2s ease-out;
+}
+
+.input-box span {
+    display: none;
+    position: absolute;
+    left: 5px;
+    top: 50px;
+    color: red;
+    font-size: calc(14 * var(--res));
+}
+
+.content .input-box input:focus,
+.content .input-box input:valid {
+    border-color: var(--font-text-color);
+    background-color: var(--section-background-color);
+}
+
+.content .input-box label {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: var(--font-text-color);
+    font-size: calc(15 * var(--res));
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.content .message-box {
+    min-height: 100px;
+    position: relative;
+}
+
+.content .message-box textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding-left: 16px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    outline: none;
+    background-color: var(--section-background-color);
+    transition: all 0.3s ease;
+    color: var(--font-text-color);
+    margin-top: 2px;
+}
+
+.content .message-box label {
+    position: absolute;
+    font-size: calc(16 * var(--res));
+    color: var(--font-text-color);
+    left: 18px;
+    top: 6px;
+    display: 14px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.content .message-box textarea:focus,
+.content .message-box textarea:valid {
+    border-color: var(--font-text-color);
+}
+
+.content .message-box textarea:focus~label {
+    left: 12px;
+    top: -10px;
+    font-size: calc(15 * var(--res));
+    color: var(--font-text-color);
+    border-color: var(--font-text-color);
+    background-color: var(--section-background-color);
+}
+
+.content .input-box input[type="submit"] {
+    color: var(--font-text-color);
+    background: #005ABA;
+    padding-left: 0;
+    font-size: calc(18 * var(--res));
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.content .input-box input[type="submit"]:hover {
+    background-color: #0866ca;
+}
+
+/*Animation*/
+.content .input-box:focus-within label,
+.content .input-box.active-input label {
+    top: 0;
+    left: 12px;
+    font-size: calc(15 * var(--res));
+    display: 14px;
+    background: var(--section-background-color);
+}
+
+.content .message-box:focus-within label,
+.content .message-box.active-input label {
+    left: 12px;
+    top: -10px;
+    font-size: calc(15 * var(--res));
+    display: 14px;
+    background: var(--section-background-color);
+}
+
+/*Si l'input est correctement remplie*/
+/*.content .input-box:focus-within .input-anim,
+.content .input-box.active-input .input-anim {
+    border: 1px solid green;
+}
+
+.content .message-box:focus-within .input-anim,
+.content .message-box.active-input .input-anim {
+    border: 1px solid green;
+}*/
+
+/*Si l'input est mal remplie*/
+.erreur {
+    border: 1px solid red !important;
+}
+
+/*message d'erreur*/
+.visible {
+    display: block !important;
+}
+
+@media (max-width: 1000px) {
+    .content .image-box {
+        max-width: 40%;
+    }
+
+    .content {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .content .image-box {
+        display: none;
+    }
+
+    .contact form {
+        width: 100%;
+        margin-left: 30px;
+    }
+}

@@ -1,0 +1,83 @@
+@import "./body.css";
+
+.about {
+    padding: 170px 0 253px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(360, 100%, 100%, 1);
+}
+
+.about-content {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-content img {
+    height: calc(730 * var(--res));
+    width: calc(700 * var(--res));
+    max-width: 100%;
+    /*object-fit: cover;*/
+}
+
+.about-content-text {
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.about-content-text .about-title {
+    color: var(--nav-background-color);
+    font-size: calc(64 * var(--res));
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.about-content-text h5 {
+    color: var(--nav-background-color);
+    font-size: calc(25 * var(--res));
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.about-content-text p {
+    color: var(--nav-background-color);
+    font-size: calc(25 * var(--res));
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+@media screen and (max-width: 1180px) {
+    .about {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+
+    .about-content-text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about .about-content img {
+        margin-bottom: 35px;
+    }
+
+    .about-content-text h1 {
+        /*font-size: 50px;*/
+        margin-bottom: 10px;
+    }
+
+    .about-content-text p {
+        line-height: 18px;
+    }
+}

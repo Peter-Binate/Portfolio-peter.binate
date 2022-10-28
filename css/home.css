@@ -1,0 +1,72 @@
+@import "./body.css";
+
+:root {
+    --font-size-homePage-title: 7vw;
+    --font-size-homePage-subTitle: 1.95vw;
+}
+
+/*HEADER*/
+header {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    /*linear-gradient assombri l'image*/
+}
+
+.homepage-title {
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    /*Centre mon nom verticalement*/
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+#videoBG {
+    position: fixed;
+    z-index: -1;
+}
+
+/*Ajustement du fond*/
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/*Met une image en fond avant 767px*/
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+
+    body {
+        background-image: url("../image/background.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .homepage-title {
+        top: 40%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    section {
+        width: 100%;
+        height: 100vh;
+    }
+}

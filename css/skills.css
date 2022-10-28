@@ -1,0 +1,119 @@
+@import "./body.css";
+
+/*.inner*/
+.skills {
+    padding: 142px 0 66px 0;
+    background-color: var(--section-background-color);
+}
+
+.skills h1 {
+    margin-bottom: 62px;
+}
+
+.skill-category {
+    margin-bottom: 66px;
+}
+
+/*.header*/
+.skill-category h5 {
+    /*border: 1px solid green;*/
+    text-align: center;
+    color: var(--font-text-color);
+    padding: 1rem;
+    position: relative;
+    font-weight: 700;
+    font-size: calc(45 * var(--res));
+    text-transform: capitalize;
+}
+
+.skill-container {
+    /*border: 1px solid red;*/
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    /*padding: 1rem 450px;*/
+}
+
+#tools {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+}
+
+.skill-container img {
+    width: 62px;
+    height: 62px;
+}
+
+.skill-icon {
+    border-radius: 10px;
+    box-shadow: 25px 50px 70px #142639;
+}
+
+
+
+
+
+
+
+
+
+
+/*.skills {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--section-background-color);
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 90px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 142px;
+}
+
+.skill h5 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 140.62%;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    margin-top: 80px;
+    margin-bottom: 35px;
+    border: 5px solid #fff;
+}
+
+.skill ul {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.skill ul li {
+    width: 100px;
+    height: 100px;
+    /*border: 1px solid #000;*/
+/*border-radius: 10px;
+    box-shadow: 25px 50px 70px 0px #142639;
+}*/
