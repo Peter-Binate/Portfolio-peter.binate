@@ -31,12 +31,15 @@
     padding: 0 10px;
 }
 
+.about-content-text .about-title::first-letter {
+    text-transform: uppercase;
+}
+
 .about-content-text .about-title {
     color: var(--nav-background-color);
     font-size: calc(64 * var(--res));
     margin-top: 50px;
     margin-bottom: 20px;
-    text-transform: capitalize;
 }
 
 .about-content-text h5 {
@@ -50,7 +53,7 @@
 .about-content-text p {
     color: var(--nav-background-color);
     font-size: calc(25 * var(--res));
-    line-height: 28px;
+    line-height: 40px;
     letter-spacing: 1px;
     margin-bottom: 45px;
 }
