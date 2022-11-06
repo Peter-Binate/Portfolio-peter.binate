@@ -58,6 +58,22 @@
     margin-bottom: 45px;
 }
 
+@media screen and (min-width: 1190px) {}
+
+@media screen and (max-width: 1180px) {
+    .about {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+        background: red;
+    }
+
+    .about-content-text {
+        background: blue;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 1180px) {
     .about {
         width: 100%;

@@ -27,7 +27,6 @@
 }
 
 .skill-container {
-    /*border: 1px solid red;*/
     max-width: 1100px;
     margin: auto;
     display: grid;
@@ -55,6 +54,7 @@
 .skill-container img {
     width: 62px;
     height: 62px;
+    padding: 7px;
 }
 
 .skill-icon {

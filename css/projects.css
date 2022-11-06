@@ -69,7 +69,7 @@
 
 .swiper-slide .content .content-title {
     grid-area: 1 / 1 / 2 / 4;
-    font-size: calc(35 * var(--res));
+    font-size: 2em;
     font-weight: bold;
     margin: 4vh 0 1.3vh 0;
     text-align: center;
@@ -80,11 +80,30 @@
     padding: 20px;
     display: block;
     text-align: center;
-    font-size: calc(20 * var(--res));
+    font-size: 1em;
     font-weight: 500;
     line-height: 1.6;
     max-height: 100%;
     overflow-y: auto;
+}
+
+.swiper-slide .content .caption::-webkit-scrollbar {
+    background: transparent;
+}
+
+.swiper-slide .content .caption::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+.swiper-slide .content .caption::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide .content .caption::-webkit-scrollbar-corner {
+    border-radius: 10px;
 }
 
 hr {
@@ -189,7 +208,7 @@ hr {
 }
 
 .slide1 {
-    background-image: url("../image/jitterclick.png");
+    background-image: url("../image/jitterclick.jpg");
 }
 
 .slide2 {
@@ -226,7 +245,6 @@ hr {
 /*Format Mobile*/
 @media screen and (max-width: 420px) {
     .swiper-slide {
-        border: 5px solid green;
         width: 420px;
     }
 
