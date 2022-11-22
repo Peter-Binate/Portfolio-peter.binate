@@ -27,12 +27,12 @@ window.addEventListener('load', () => {
     });
     
     TimeLine02.from("#skills-title",{ y: -50 });
-    TimeLine02.from("h5",{ y: -50 }, "-=1");
+    TimeLine02.from(".skill-title",{ y: -50 }, "-=1");
     TimeLine02.from(".skill-container",{ opacity: 0 }, "-=1");
     TimeLine02.to(".skill-container", 1, {opacity: 0, ease: "power2.out"}, 0.3);
 
     // PROJECTS
-     const TimeLine03 = gsap.timeline({
+    /* const TimeLine03 = gsap.timeline({
         scrollTrigger: {
             trigger: "#projects",
             start: "top center",
@@ -40,7 +40,7 @@ window.addEventListener('load', () => {
     });
     
     TimeLine03.from("#projects-title",{ y: -50 });
-    TimeLine03.from(".swiper-slide ",{ y: -150 }, "-=1.2");
+    TimeLine03.from(".swiper-slide ",{ y: -150 }, "-=1.2");*/
     
     // CONTACT
     const TimeLine04 = gsap.timeline({
@@ -64,95 +64,6 @@ window.addEventListener('load', () => {
     
     TimeLine05.from(footerContent,{ y: 50 });
     TimeLine05.from("#copyright",{ y: 50 }, "-=1");
-
-  
-    /*
-    NAVBAR  
-    Faire apparaitre le background au scroll*/
-    const navBackground = document.querySelector('.nav-container');
-    const mediaQuery = window.matchMedia('(min-width: 768px)');
-    let lastScroll = 0;
-
-    if (mediaQuery.matches) {
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset
-        
-            if(currentScroll > 0){
-                navBackground.classList.add("nav-background");
-            } else{
-                navBackground.classList.remove("nav-background");
-            }
-        
-            lastScroll = currentScroll;
-            console.log(currentScroll);
-        })
-    }
-
-    /*
-    Navbar pour Format tablette et smartphone:
-    Lorsque je clique sur le menu burger*/
-    const navMenu = document.getElementById('nav-menu'),
-        navToggle = document.getElementById('nav-toggle'),
-        navClose = document.getElementById('nav-close')
-
-    if(navToggle){
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.add('show-menu')
-        })
-    } 
-
-    if(navClose){
-        navClose.addEventListener('click', () => {
-            navMenu.classList.remove('show-menu')
-        })
-    }
-
-    //FORMULAIRE
-    // border vert ou rouge
-    const input = document.querySelectorAll('.input-anim');
-    const messageBox = document.querySelector('.message-anim');
-    //message d'erreur
-    const validation = document.querySelectorAll('.input-box span'); 
-
-    // Dès qu'on va remplir l'input
-    input.forEach((function (input) {
-        input.addEventListener('input', function (event) {
-    
-            console.log(event.target.value);
-            // Empêche le label et la value de l'input de se superposer 
-            if (event.target.value !== "") {
-                event.target.parentNode.classList.add('active-input');
-            } else if (event.target.value === "") {
-                event.target.parentNode.classList.remove('active-input');
-            }
-    
-        })
-    }))
-    
-    validation.forEach((function (input) {
-        input.addEventListener('input', function (event) {
-    
-            console.log(event.target.value);
-            //Si l'input est remplie de manière incorrect
-            if (event.target.value.includes('$')) {
-                input.classList.add('erreur');
-                validation.classList.add('visible');
-            } else {
-                input.classList.remove('erreur');
-                validation.classList.remove('visible');
-            }
-        })
-    }))
-
-    // Dès qu'on va remplir le textarea
-    messageBox.addEventListener('input', function (event) {
-        // Empêche le label et la value de l'input de se superposer 
-        if (event.target.value !== "") {
-                event.target.parentNode.classList.add('active-input');
-        } else if (event.target.value === "") {
-            event.target.parentNode.classList.remove('active-input');
-        }
-    })  
 })
 
 
