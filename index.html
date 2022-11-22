@@ -24,525 +24,544 @@
 </head>
 
 <body>
-  <div class="nav-container" id="nav-container">
-    <nav class="navbarItems">
-      <h3 class="navbar_logo">Binate Peter</h3>
-      <div class="nav_menu" id="nav-menu">
-        <ul class="nav-list">
+  <div class="wrapper">
+    <div class="nav-container" id="nav-container">
+      <nav class="navbarItems">
+        <h3 class="navbar_logo">Binate Peter</h3>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav_item">
+              <a class="nav_link" href="#homepage">
+                <i class="fa-solid fa-house nav_icon"></i>Accueil
+                <!--Home-->
+              </a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#presentation">
+                <i class="fa-solid fa-user nav_icon"></i>Présentation
+                <!--Presentation-->
+              </a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#skills">
+                <i class="fa-solid fa-brain nav_icon"></i>Compétences
+                <!--Fähigkeiten-->
+              </a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#projects">
+                <i class="fa-solid fa-folder nav_icon"></i>Projets
+                <!--Projekte Projets-->
+              </a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#contact-me">
+                <i class="fa-solid fa-paper-plane nav_icon"></i>Contact
+                <!--Kontact-->
+              </a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#">
+                <i class="fa-solid fa-file-pdf nav_icon"></i>Cv
+                <!--Lebenslauf-->
+              </a>
+            </li>
+          </ul>
+          <i class="fa-solid fa-xmark nav_close" id="nav-close"></i>
+        </div>
+
+        <div class="nav_btns">
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <header>
+      <video id="videoBG" poster="../image/background.jpg" autoplay muted loop>
+        <source src="video/background.mp4" type="video/mp4">
+      </video>
+
+      <div id="homepage" class="homepage-title">
+        <div id="homepage-title" class="smoke">
+          <ul class="name">
+            <li>B</li>
+            <li>I</li>
+            <li>N</li>
+            <li>A</li>
+            <li>T</li>
+            <li>E</li>
+          </ul>
+          <ul class="forname">
+            <li>P</li>
+            <li>e</li>
+            <li>t</li>
+            <li>e</li>
+            <li>r</li>
+          </ul>
+        </div>
+        <div id="homepage-subtitle" class="smoke2">
+          <ul class="job-name">
+            <li>S</li>
+            <li>o</li>
+            <li>f</li>
+            <li>t</li>
+            <li>w</li>
+            <li>a</li>
+            <li>r</li>
+            <li>e</li>
+            <li>e</li>
+            <li>n</li>
+            <li>t</li>
+            <li>w</li>
+            <li>i</li>
+            <li>c</li>
+            <li>k</li>
+            <li>l</li>
+            <li>e</li>
+            <li>r</li>
+          </ul>
+          <ul class="job-category">
+            <li>f</li>
+            <li>r</li>
+            <li>o</li>
+            <li>n</li>
+            <li>t</li>
+            <li>-</li>
+            <li>e</li>
+            <li>n</li>
+            <li>d</li>
+          </ul>
+          <ul class="job-techno">
+            <li>j</li>
+            <li>a</li>
+            <li>v</li>
+            <li>a</li>
+            <li>s</li>
+            <li>c</li>
+            <li>r</li>
+            <li>i</li>
+            <li>p</li>
+            <li>t</li>
+          </ul>
+          <ul class="job-statut">
+            <li>j</li>
+            <li>u</li>
+            <li>n</li>
+            <li>i</li>
+            <li>o</li>
+            <li>r</li>
+          </ul>
+        </div>
+        <!--h2>Développeur-web front-end javascript junior</h2-->
+      </div>
+    </header>
+
+    <section id="presentation" class="about">
+      <div class="about-content">
+        <img id="profil-image" src="image/my_portrait.png" alt="portrait">
+        <div class="about-content-text">
+          <h1 class="about-title">Qui suis-je?</h1>
+          <h5>Développer javascript junior</h5>
+          <!--h1 class="about-title">Wer bin ich?</h1-->
+          <!--h5>Softwareentwickler javascript junior</h5-->
+          <p>Bienvenue sur mon portfolio! <br>
+            J'ai découvert le monde du codage lors de mon cursus universitaire en DUT MMI (Métiers du Multumédia et de
+            l'Internet 2018-2020),
+            depuis j'ai pour ambition de devenir développeur web front-end spécialisé en javascript.
+            <br>
+            J'aime cet univers qui permet de créer divers projets: utiles, créatifs, ludiques ou bien même pédagogiques.
+          </p>
+          <!--p>Willkommen zu mein portfolio!
+            Ich habe die Welt der Programmation während meines Studiums „Multimedia und Internet“ entdeckt (2018-2020).
+            Seitdem habe ich mich den Ehrgeit als Softwareentwickler front-end in JavaScript spezialisiert.
+            Ich mag diesen Beruf, da er mir ermöglicht viele Projekte zu machen: nutzlich, kreativ, verspielt oder
+            pädagogisch.
+          </p-->
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h1 id="skills-title" class="title title-center">Mes Compétences</h1>
+      <!--h1 id="skills-title" class="title title-center">Meine Fähigkeiten </h1-->
+      <div class="skill-category">
+        <h5 class="skill-title">Front-end</h5>
+        <div class="skill-container">
+          <div class="img">
+            <img src="image/html.png" alt="" class="skill-icon">
+            <p>Html</p>
+          </div>
+          <div class="img">
+            <img src="image/css.png" alt="" class="skill-icon">
+            <p>Css</p>
+          </div>
+          <div class="img">
+            <img src="image/js.png" alt="" class="skill-icon">
+            <p>JavaScript</p>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h5 class="skill-title">Back-end</h5>
+        <div class="skill-container">
+          <div class="img">
+            <img src="image/python.png" alt="" class="skill-icon">
+            <p>Python</p>
+          </div>
+          <div class="img">
+            <img src="image/php.png" alt="" class="skill-icon">
+            <p>Php</p>
+          </div>
+          <div class="img">
+            <img src="image/sql.png" alt="" class="skill-icon">
+            <p>Sql</p>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h5 class="skill-title">Framework</h5>
+        <div class="skill-container">
+          <div class="img">
+            <img src="image/bootstrap.png" alt="" class="skill-icon">
+            <p>Bootstrap</p>
+          </div>
+          <div class="img">
+            <img src="image/react.png" alt="" class="skill-icon">
+            <p>React</p>
+          </div>
+          <div class="img">
+            <img src="image/dj.png" alt="" class="skill-icon">
+            <p>Django</p>
+          </div>
+        </div>
+      </div>
+      <div id="skills" class="skill-category">
+        <h5 class="skill-title">Tools</h5>
+        <div id="tools" class="skill-container">
+          <div class="img">
+            <img src="image/firebase.png" alt="" class="skill-icon">
+            <p>Firebase</p>
+          </div>
+          <div class="img">
+            <img src="image/adobe.png" alt="" class="skill-icon">
+            <p>Adobe suite</p>
+          </div>
+          <div class="img">
+            <img src="image/git.png" alt="" class="skill-icon">
+            <p>Git</p>
+          </div>
+          <div class="img">
+            <img src="image/vscode.png" alt="" class="skill-icon">
+            <p>VS Code</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <!--h1 id="projects-title" class="title title-center">Meine Projekte</h1-->
+      <h1 id="projects-title" class="title title-center">Mes Projets</h1>
+      <div class="swiper-container loading">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide slide1" data-swiper-autoplay="5000">
+            <div class="content">
+              <p class="content-title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Jitterclick</p>
+              <span class="caption" data-swiper-parallax="-20%">Premier projet javascript.
+                Concept: le jeu consiste à cliquer le plus vite possible sur une zone prédéfinie dans un temps imparti.
+                Ce projet m'a permis d'utiliser: les class et les fonctions tel que (setIntervall, fonction anonymes,
+                fadeIn et fadeOut...).
+              </span>
+              <hr>
+              <div class="content-bottom">
+                <div class="techno">
+                  <!--p>Verwendeten Techniken: Technlogies utilisés:</p-->
+                  <p>Technlogies utilisés:</p>
+                  <div class="techno-img">
+                    <img src="image/html-color.png" alt="html-icon">
+                    <img src="image/css-color.png" alt="css-icon">
+                    <img src="image/js-color.png" alt="js-icon">
+                  </div>
+                </div>
+                <div class="show-website">
+                  <a href="https://peter-binate.github.io/jitterclick/" target="_blank">
+                    <span>Voir le site
+                      <!--p>Besuchen Sie die Seite Voir le site</p--> <i class="fa-solid fa-arrow-right arrow-1"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide2" data-swiper-autoplay="5000">
+            <div class="content">
+              <p class="content-title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Tower defense</p>
+              <span class="caption" data-swiper-parallax="-20%">Jeu de tower defense réalisé dans le cadre d'un projet
+                d'étude en deuxième année de Dut MMI.
+                <br>
+                Règle : le but du jeu consiste à empêcher des vagues successives de monstres d'atteindre notre château.
+                Afin d'y parvenir, il faut cliquer sur une tour et la disposer sur la map.
+                Ces tours vont infliger des dégâts proportionnels à leurs niveaux d'attaque. </span>
+              <hr>
+              <div class="content-bottom">
+                <div class="techno">
+                  <!--p>Verwendeten Techniken: Technlogies utilisés:</p-->
+                  <p>Technlogies utilisés:</p>
+                  <div class="techno-img">
+                    <img src="image/html-color.png" alt="html-icon">
+                    <img src="image/css-color.png" alt="css-icon">
+                    <img src="image/js-color.png" alt="js-icon">
+                  </div>
+                </div>
+                <div class="show-website">
+                  <a href="https://peter-binate.github.io/tower-defense/" target="_blank">
+                    <span>Voir le site
+                      <!--p>Besuchen Sie die Seite Voir le site</p--> <i class="fa-solid fa-arrow-right arrow-1"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide3" data-swiper-autoplay="5000">
+            <div class="content">
+              <p class="content-title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Reine Master</p>
+              <span class="caption" data-swiper-parallax="-20%">Création d'un formulaire et d'une page d'algorythme
+                (arbre
+                et tableau) pour le prototype de l'application Reine (côté front-end) lors d'un projet tuteuré (2020).
+                Reine est une application de classification automatisée d’un texte et l’organisation de son discours.
+
+
+              </span>
+              <hr>
+              <div class="content-bottom">
+                <div class="techno">
+                  <!--p>Verwendeten Techniken: Technlogies utilisés:</p-->
+                  <p>Technlogies utilisés:</p>
+                  <div class="techno-img">
+                    <img src="image/html-color.png" alt="html-icon">
+                    <img src="image/css-color.png" alt="css-icon">
+                    <img src="image/js-color.png" alt="js-icon">
+                  </div>
+                </div>
+                <div class="show-website">
+                  <a href="https://peter-binate.github.io/reine-app-prototype/" target="_blank">
+                    <span class="underline">Voir le site
+                      <!--p>Besuchen Sie die Seite Voir le site</p--> <i class="fa-solid fa-arrow-right arrow-1"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--section id="contact-me" class="contact">
+      <div id="contact-container" class="container">
+        <div class="content">
+          <div class="image-box">
+            <img src="image/contact.png" alt="">
+          </div>
+          <form action="" method="post" id="form">
+            <div class="topic">Kontaktieren Sie mich!</div>
+            <div class="input-box">
+              <input type="text" class="input-anim" required>
+              <label for="">Ihren Namen eingeben</label>
+              <span>Le nom d'utilisateur doit avoir de 3 à 30 caractères
+                (lettres, nombres, tirets et underscores uniquement).</span>
+            </div>
+            <div class="input-box">
+              <input type="email" class="input-anim" required>
+              <label for="">Ihren Email eingeben</label>
+            </div>
+            <div class="message-box">
+              <textarea class="message-anim" name="message" id="message" cols="30" rows="10"></textarea>
+              <label for="">Ihren Nachricht eingeben</label>
+            </div>
+            <div class="input-box">
+              <input type="submit" value="Senden">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section-->
+    <section id="contact-me" class="contact">
+      <div id="contact-container" class="container">
+        <div class="content">
+          <div class="image-box">
+            <img src="image/contact.png" alt="">
+          </div>
+          <form id="form" method="post">
+            <div class="topic">Contactez-moi!</div>
+            <div class="input-box">
+              <label for="">Entrer votre nom</label>
+              <input type="text" id="username" class="input-anim" autocomplete="nope">
+              <i class="fa-solid fa-check"></i>
+              <i class="fa-solid fa-exclamation"></i>
+              <small>Error message</small>
+              <!--span>Le nom d'utilisateur doit avoir de 3 à 30 caractères
+                (lettres, nombres, tirets et underscores uniquement).</span-->
+            </div>
+            <div class="input-box">
+              <label for="">Entrer votre email</label>
+              <input type="email" id="email" class="input-anim">
+              <i class="fa-solid fa-check"></i>
+              <i class="fa-solid fa-exclamation"></i>
+              <small>Error message</small>
+            </div>
+            <div class="message-box">
+              <label for="">Entrer votre message</label>
+              <textarea class="message-anim" name="message" id="message" cols="30" rows="10"></textarea>
+              <small>Error message</small>
+            </div>
+            <div class="input-box">
+              <input type="submit" value="Envoyer">
+              <!--input type="submit" value="Envoyer" onclick="openPopup()"-->
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="popup">
+        <h2 class="popup-title">Merci!</h2>
+        <p>Votre message a été envoyé avec succès. Je vous contacterai très rapidement.</p>
+        <!--button onclick="closePopup()" type="button">Fermer</button-->
+      </div>
+    </section>
+
+    <!--footer id="footer" class="footer">
+      <div class="footer-container">
+        <a href="" class="brand">Binate Peter</a>
+        <ul class="menu">
           <li class="nav_item">
             <a class="nav_link" href="#homepage">
-              <i class="fa-solid fa-house nav_icon"></i>Accueil
-              <!--Home-->
+              Home
             </a>
           </li>
           <li class="nav_item">
             <a class="nav_link" href="#presentation">
-              <i class="fa-solid fa-user nav_icon"></i>Présentation
-              <!--Presentation-->
+              Presentation
             </a>
           </li>
           <li class="nav_item">
             <a class="nav_link" href="#skills">
-              <i class="fa-solid fa-brain nav_icon"></i>Compétences
-              <!--Fähigkeiten-->
+              Fähigkeiten
             </a>
           </li>
           <li class="nav_item">
             <a class="nav_link" href="#projects">
-              <i class="fa-solid fa-folder nav_icon"></i>Projets
-              <!--Projekte Projets-->
+              Projekte
             </a>
           </li>
           <li class="nav_item">
             <a class="nav_link" href="#contact-me">
-              <i class="fa-solid fa-paper-plane nav_icon"></i>Contact
-              <!--Kontact-->
+              Kontact
+            </a>
+          </li>
+        </ul>
+        <div class="contact-infos-container">
+          <ul class="contact-infos-content">
+            <li><span><i class="fa-sharp fa-solid fa-envelope"></i>peter.binate@gmail.com</span></li>
+            <li><span><i class="fa-sharp fa-solid fa-phone"></i>06.28.7.89.14</span></li>
+          </ul>
+        </div>
+        <ul class="media-icons">
+          <li>
+            <a href="" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://fr.linkedin.com/in/peter-binate-08776a171" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank">
+              <i class="fa-regular fa-file-pdf"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="creative-commons">
+        <small id="copyright" class="footer-content-animation">&copy; 2022-2023 <b>Peter Binate</b> - Copyright All Right
+          Reserve</small>
+      </div>
+    </footer-->
+
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+        <a href="" class="brand">Binate Peter</a>
+        <ul class="menu">
+          <li class="nav_item">
+            <a class="nav_link" href="#homepage">
+              Accueil
             </a>
           </li>
           <li class="nav_item">
-            <a class="nav_link" href="#">
-              <i class="fa-solid fa-file-pdf nav_icon"></i>Cv
-              <!--Lebenslauf-->
+            <a class="nav_link" href="#presentation">
+              Présentation
+            </a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#skills">
+              Compétences
+            </a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#projects">
+              Projets
+            </a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#contact-me">
+              Contact
             </a>
           </li>
         </ul>
-        <i class="fa-solid fa-xmark nav_close" id="nav-close"></i>
-      </div>
-
-      <div class="nav_btns">
-        <div class="nav_toggle" id="nav-toggle">
-          <i class="fa-solid fa-plus"></i>
+        <div class="contact-infos-container">
+          <ul class="contact-infos-content">
+            <li id="mail"><span><i class="fa-sharp fa-solid fa-envelope"></i>peter.binate@gmail.com</span></li>
+            <li><span><i class="fa-sharp fa-solid fa-phone"></i>06.28.47.89.14</span></li>
+          </ul>
         </div>
+        <ul class="media-icons">
+          <li>
+            <a href="https://github.com/Tixerax" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://fr.linkedin.com/in/peter-binate-08776a171" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank">
+              <i class="fa-regular fa-file-pdf"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-    </nav>
+      <div class="creative-commons">
+        <small id="copyright" class="footer-content-animation">&copy; 2022-2023 <b>Peter Binate</b> - Copyright All
+          Right
+          Reserve</small>
+      </div>
+    </footer>
   </div>
-
-  <header>
-    <video id="videoBG" poster="../image/background.jpg" autoplay muted loop>
-      <source src="video/background.mp4" type="video/mp4">
-    </video>
-
-    <div id="homepage" class="homepage-title">
-      <div id="homepage-title" class="smoke">
-        <ul class="name">
-          <li>B</li>
-          <li>I</li>
-          <li>N</li>
-          <li>A</li>
-          <li>T</li>
-          <li>E</li>
-        </ul>
-        <ul class="forname">
-          <li>P</li>
-          <li>e</li>
-          <li>t</li>
-          <li>e</li>
-          <li>r</li>
-        </ul>
-      </div>
-      <div id="homepage-subtitle" class="smoke2">
-        <ul class="job-name">
-          <li>S</li>
-          <li>o</li>
-          <li>f</li>
-          <li>t</li>
-          <li>w</li>
-          <li>a</li>
-          <li>r</li>
-          <li>e</li>
-          <li>e</li>
-          <li>n</li>
-          <li>t</li>
-          <li>w</li>
-          <li>i</li>
-          <li>c</li>
-          <li>k</li>
-          <li>l</li>
-          <li>e</li>
-          <li>r</li>
-        </ul>
-        <ul class="job-category">
-          <li>f</li>
-          <li>r</li>
-          <li>o</li>
-          <li>n</li>
-          <li>t</li>
-          <li>-</li>
-          <li>e</li>
-          <li>n</li>
-          <li>d</li>
-        </ul>
-        <ul class="job-techno">
-          <li>j</li>
-          <li>a</li>
-          <li>v</li>
-          <li>a</li>
-          <li>s</li>
-          <li>c</li>
-          <li>r</li>
-          <li>i</li>
-          <li>p</li>
-          <li>t</li>
-        </ul>
-        <ul class="job-statut">
-          <li>j</li>
-          <li>u</li>
-          <li>n</li>
-          <li>i</li>
-          <li>o</li>
-          <li>r</li>
-        </ul>
-      </div>
-      <!--h2>Développeur-web front-end javascript junior</h2-->
-    </div>
-  </header>
-
-  <section id="presentation" class="about">
-    <div class="about-content">
-      <img id="profil-image"
-        src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2015/08/IMG_7802s.jpg?w=750&h=750" alt="">
-      <div class="about-content-text">
-        <h1 class="about-title">Qui suis-je?</h1>
-        <h5>Développer javascript junior</h5>
-        <!--h1 class="about-title">Wer bin ich?</h1-->
-        <!--h5>Softwareentwickler javascript junior</h5-->
-        <p>Bienvenue sur mon portfolio! <br>
-          J'ai découvert le monde du codage lors de mon cursus universitaire en DUT MMI (Métiers du Multumédia et de
-          l'Internet 2018-2020),
-          depuis j'ai pour ambition de devenir développeur web front-end spécialisé en javascript.
-          <br>
-          J'aime cet univers qui permet de créer divers projets: utiles, créatifs, ludiques ou bien même pédagogiques.
-        </p>
-        <!--p>Willkommen zu mein portfolio!
-          Ich habe die Welt der Programmation während meines Studiums „Multimedia und Internet“ entdeckt (2018-2020).
-          Seitdem habe ich mich den Ehrgeit als Softwareentwickler front-end in JavaScript spezialisiert.
-          Ich mag diesen Beruf, da er mir ermöglicht viele Projekte zu machen: nutzlich, kreativ, verspielt oder
-          pädagogisch.
-        </p-->
-      </div>
-    </div>
-  </section>
-
-  <section id="skills" class="skills">
-    <h1 id="skills-title" class="title title-center">Mes Compétences</h1>
-    <!--h1 id="skills-title" class="title title-center">Meine Fähigkeiten </h1-->
-    <div class="skill-category">
-      <h5>Front-end</h5>
-      <div class="skill-container">
-        <div class="img">
-          <img src="image/html.png" alt="" class="skill-icon">
-          <p>Html</p>
-        </div>
-        <div class="img">
-          <img src="image/css.png" alt="" class="skill-icon">
-          <p>Css</p>
-        </div>
-        <div class="img">
-          <img src="image/js.png" alt="" class="skill-icon">
-          <p>JavaScript</p>
-        </div>
-      </div>
-    </div>
-    <div class="skill-category">
-      <h5>Back-end</h5>
-      <div class="skill-container">
-        <div class="img">
-          <img src="image/python.png" alt="" class="skill-icon">
-          <p>Python</p>
-        </div>
-        <div class="img">
-          <img src="image/php.png" alt="" class="skill-icon">
-          <p>Php</p>
-        </div>
-        <div class="img">
-          <img src="image/sql.png" alt="" class="skill-icon">
-          <p>Sql</p>
-        </div>
-      </div>
-    </div>
-    <div class="skill-category">
-      <h5>Framework</h5>
-      <div class="skill-container">
-        <div class="img">
-          <img src="image/bootstrap.png" alt="" class="skill-icon">
-          <p>Bootstrap</p>
-        </div>
-        <div class="img">
-          <img src="image/react.png" alt="" class="skill-icon">
-          <p>React</p>
-        </div>
-        <div class="img">
-          <img src="image/dj.png" alt="" class="skill-icon">
-          <p>Django</p>
-        </div>
-      </div>
-    </div>
-    <div id="skills" class="skill-category">
-      <h5>Tools</h5>
-      <div id="tools" class="skill-container">
-        <div class="img">
-          <img src="image/firebase.png" alt="" class="skill-icon">
-          <p>Firebase</p>
-        </div>
-        <div class="img">
-          <img src="image/adobe.png" alt="" class="skill-icon">
-          <p>Adobe suite</p>
-        </div>
-        <div class="img">
-          <img src="image/git.png" alt="" class="skill-icon">
-          <p>Git</p>
-        </div>
-        <div class="img">
-          <img src="image/vscode.png" alt="" class="skill-icon">
-          <p>VS Code</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="projects">
-    <!--h1 id="projects-title" class="title title-center">Meine Projekte</h1-->
-    <h1 id="projects-title" class="title title-center">Mes Projets</h1>
-    <div class="swiper-container loading">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide slide1" data-swiper-autoplay="5000">
-          <div class="content">
-            <p class="content-title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Jitterclick</p>
-            <span class="caption" data-swiper-parallax="-20%">Premier projet javascript.
-              Concept: le jeu consiste à cliquer le plus vite possible sur une zone prédéfinie dans un temps imparti.
-              Ce projet m'a permis d'utiliser: les class et les fonctions tel que (setIntervall, fonction anonymes,
-              fadeIn et fadeOut...).
-            </span>
-            <hr>
-            <div class="content-bottom">
-              <div class="techno">
-                <!--p>Verwendeten Techniken: Technlogies utilisés:</p-->
-                <p>Technlogies utilisés:</p>
-                <div class="techno-img">
-                  <img src="image/html-color.png" alt="html-icon">
-                  <img src="image/css-color.png" alt="css-icon">
-                  <img src="image/js-color.png" alt="js-icon">
-                </div>
-              </div>
-              <div class="show-website">
-                <a href="https://peter-binate.github.io/jitterclick/" target="_blank">
-                  <span>Voir le site
-                    <!--p>Besuchen Sie die Seite Voir le site</p--> <i class="fa-solid fa-arrow-right arrow-1"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide slide2" data-swiper-autoplay="5000">
-          <div class="content">
-            <p class="content-title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Tower defense</p>
-            <span class="caption" data-swiper-parallax="-20%">Jeu de tower defense réalisé dans le cadre d'un projet
-              d'étude en deuxième année de Dut MMI.
-              <br>
-              Règle : le but du jeu consiste à empêcher des vagues successives de monstres d'atteindre notre château.
-              Afin d'y parvenir, il faut cliquer sur une tour et la disposer sur la map.
-              Ces tours vont infliger des dégâts proportionnels à leurs niveaux d'attaque. </span>
-            <hr>
-            <div class="content-bottom">
-              <div class="techno">
-                <!--p>Verwendeten Techniken: Technlogies utilisés:</p-->
-                <p>Technlogies utilisés:</p>
-                <div class="techno-img">
-                  <img src="image/html-color.png" alt="html-icon">
-                  <img src="image/css-color.png" alt="css-icon">
-                  <img src="image/js-color.png" alt="js-icon">
-                </div>
-              </div>
-              <div class="show-website">
-                <a href="#" target="_blank">
-                  <span>Voir le site
-                    <!--p>Besuchen Sie die Seite Voir le site</p--> <i class="fa-solid fa-arrow-right arrow-1"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide slide3" data-swiper-autoplay="5000">
-          <div class="content">
-            <p class="content-title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Reine Master</p>
-            <span class="caption" data-swiper-parallax="-20%">Création d'un formulaire et d'une page d'algorythme (arbre
-              et tableau) pour le prototype de l'application Reine (côté front-end) lors d'un projet tuteuré (2020).
-              Reine est une application de classification automatisée d’un texte et l’organisation de son discours.
-
-
-            </span>
-            <hr>
-            <div class="content-bottom">
-              <div class="techno">
-                <!--p>Verwendeten Techniken: Technlogies utilisés:</p-->
-                <p>Technlogies utilisés:</p>
-                <div class="techno-img">
-                  <img src="image/html-color.png" alt="html-icon">
-                  <img src="image/css-color.png" alt="css-icon">
-                  <img src="image/js-color.png" alt="js-icon">
-                </div>
-              </div>
-              <div class="show-website">
-                <a href="#" target="_blank">
-                  <span class="underline">Voir le site
-                    <!--p>Besuchen Sie die Seite Voir le site</p--> <i class="fa-solid fa-arrow-right arrow-1"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <!--section id="contact-me" class="contact">
-    <div id="contact-container" class="container">
-      <div class="content">
-        <div class="image-box">
-          <img src="image/contact.png" alt="">
-        </div>
-        <form action="" method="post" id="form">
-          <div class="topic">Kontaktieren Sie mich!</div>
-          <div class="input-box">
-            <input type="text" class="input-anim" required>
-            <label for="">Ihren Namen eingeben</label>
-            <span>Le nom d'utilisateur doit avoir de 3 à 30 caractères
-              (lettres, nombres, tirets et underscores uniquement).</span>
-          </div>
-          <div class="input-box">
-            <input type="email" class="input-anim" required>
-            <label for="">Ihren Email eingeben</label>
-          </div>
-          <div class="message-box">
-            <textarea class="message-anim" name="message" id="message" cols="30" rows="10"></textarea>
-            <label for="">Ihren Nachricht eingeben</label>
-          </div>
-          <div class="input-box">
-            <input type="submit" value="Senden">
-          </div>
-        </form>
-      </div>
-    </div>
-  </section-->
-  <section id="contact-me" class="contact">
-    <div id="contact-container" class="container">
-      <div class="content">
-        <div class="image-box">
-          <img src="image/contact.png" alt="">
-        </div>
-        <form id="form">
-          <div class="topic">Contactez-moi!</div>
-          <div class="input-box">
-            <input type="text" class="input-anim" required>
-            <label for="">Entrer votre nom</label>
-            <span>Le nom d'utilisateur doit avoir de 3 à 30 caractères
-              (lettres, nombres, tirets et underscores uniquement).</span>
-          </div>
-          <div class="input-box">
-            <input type="email" id="email" class="input-anim" required>
-            <label for="">Entrer votre email</label>
-          </div>
-          <div class="message-box">
-            <textarea class="message-anim" name="message" id="message" cols="30" rows="10"></textarea>
-            <label for="">Entrer votre message</label>
-          </div>
-          <div class="input-box">
-            <input type="submit" value="Envoyer">
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!--footer id="footer" class="footer">
-    <div class="footer-container">
-      <a href="" class="brand">Binate Peter</a>
-      <ul class="menu">
-        <li class="nav_item">
-          <a class="nav_link" href="#homepage">
-            Home
-          </a>
-        </li>
-        <li class="nav_item">
-          <a class="nav_link" href="#presentation">
-            Presentation
-          </a>
-        </li>
-        <li class="nav_item">
-          <a class="nav_link" href="#skills">
-            Fähigkeiten
-          </a>
-        </li>
-        <li class="nav_item">
-          <a class="nav_link" href="#projects">
-            Projekte
-          </a>
-        </li>
-        <li class="nav_item">
-          <a class="nav_link" href="#contact-me">
-            Kontact
-          </a>
-        </li>
-      </ul>
-      <div class="contact-infos-container">
-        <ul class="contact-infos-content">
-          <li><span><i class="fa-sharp fa-solid fa-envelope"></i>peter.binate@gmail.com</span></li>
-          <li><span><i class="fa-sharp fa-solid fa-phone"></i>06.28.7.89.14</span></li>
-        </ul>
-      </div>
-      <ul class="media-icons">
-        <li>
-          <a href="" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://fr.linkedin.com/in/peter-binate-08776a171" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="" target="_blank">
-            <i class="fa-regular fa-file-pdf"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="creative-commons">
-      <small id="copyright" class="footer-content-animation">&copy; 2022-2023 <b>Peter Binate</b> - Copyright All Right
-        Reserve</small>
-    </div>
-  </footer-->
-
-  <footer id="footer" class="footer">
-    <div class="footer-container">
-      <a href="" class="brand">Binate Peter</a>
-      <ul class="menu">
-        <li class="nav_item">
-          <a class="nav_link" href="#homepage">
-            Accueil
-          </a>
-        </li>
-        <li class="nav_item">
-          <a class="nav_link" href="#presentation">
-            Présentation
-          </a>
-        </li>
-        <li class="nav_item">
-          <a class="nav_link" href="#skills">
-            Compétences
-          </a>
-        </li>
-        <li class="nav_item">
-          <a class="nav_link" href="#projects">
-            Projets
-          </a>
-        </li>
-        <li class="nav_item">
-          <a class="nav_link" href="#contact-me">
-            Contact
-          </a>
-        </li>
-      </ul>
-      <div class="contact-infos-container">
-        <ul class="contact-infos-content">
-          <li id="mail"><span><i class="fa-sharp fa-solid fa-envelope"></i>peter.binate@gmail.com</span></li>
-          <li><span><i class="fa-sharp fa-solid fa-phone"></i>06.28.47.89.14</span></li>
-        </ul>
-      </div>
-      <ul class="media-icons">
-        <li>
-          <a href="https://github.com/Tixerax" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://fr.linkedin.com/in/peter-binate-08776a171" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="" target="_blank">
-            <i class="fa-regular fa-file-pdf"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="creative-commons">
-      <small id="copyright" class="footer-content-animation">&copy; 2022-2023 <b>Peter Binate</b> - Copyright All Right
-        Reserve</small>
-    </div>
-  </footer>
 
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/app.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
@@ -590,7 +609,6 @@
       };
     let mySwiper = new Swiper(sliderSelector, options);
     mySwiper.init();
-    console.log('slidesPerView: ' + mySwiper.init());
     //Slide
     /*const mediaQuerySlide = window.matchMedia('(min-width: 912px)');
 
