@@ -18,11 +18,6 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    scroll-behavior: smooth
-}
-
 html {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -31,8 +26,12 @@ html {
 }
 
 body {
-    width: 100%;
+    scroll-behavior: smooth;
+    max-width: 900%;
     height: 100vh;
+}
+
+.wrapper {
     overflow-x: hidden;
 }
 

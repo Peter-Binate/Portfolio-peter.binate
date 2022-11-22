@@ -1,11 +1,16 @@
 @import "./body.css";
 
+input:-webkit-autofill {
+    color: #2a2a2a !important;
+}
+
 .contact {
     background: radial-gradient(38.61% 182.5% at 30.84% 37.95%, #1D334A 3.36%, #373951 46.87%, #2A3248 66.79%, #1C334A 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 200px 0 200px 0;
+    position: relative;
 }
 
 .container {
@@ -44,7 +49,7 @@
 .contact .input-box {
     width: 100%;
     height: 50px;
-    margin: 16px 0;
+    margin: 26px 0 46px;
     position: relative;
 }
 
@@ -60,19 +65,11 @@
     border: 2px solid var(--font-text-color);
     transition: all 0.3s ease;
     color: var(--font-text-color);
+    display: block;
 }
 
 .input-anim {
     transition: border 0.2s ease-out;
-}
-
-.input-box span {
-    display: none;
-    position: absolute;
-    left: 5px;
-    top: 50px;
-    color: red;
-    font-size: calc(14 * var(--res));
 }
 
 .content .input-box .input-anim:focus,
@@ -90,6 +87,54 @@
     pointer-events: none;
     transform: translateY(-50%);
     transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.content .input-box i {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.content .input-box small {
+    position: absolute;
+    left: 57px;
+    top: 130%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.content .input-box.error small,
+.content .message-box.error small {
+    color: #000;
+    font-style: italic;
+    font-weight: 500;
+    visibility: visible;
+}
+
+#form>div.message-box.active-input.error>small {
+    position: absolute;
+    left: 27.5%;
+    top: 115%;
+    transform: translate(-50%, -50%);
+}
+
+.input-box.success i.fa-check {
+    color: #fff;
+    visibility: visible;
+}
+
+.input-box.error i.fa-exclamation {
+    color: #000;
+    visibility: visible;
+    border-color: #000 !important;
+}
+
+/*Si l'input est mal remplie*/
+.error {
+    border-color: #000 !important;
 }
 
 .content .message-box {
@@ -121,6 +166,7 @@
     display: 14px;
     pointer-events: none;
     transition: all 0.3s ease;
+    z-index: 999;
 }
 
 .content .message-box textarea:focus,
@@ -147,6 +193,7 @@
     letter-spacing: 1px;
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    margin-top: 20px;
 }
 
 .content .input-box input[type="submit"]:hover {
@@ -174,25 +221,45 @@
     padding: 0 10px;
 }
 
-/*Si l'input est correctement remplie*/
-/*.content .input-box:focus-within .input-anim,
-.content .input-box.active-input .input-anim {
-    border: 1px solid green;
+/*POPUP*/
+#popup {
+    width: 500px;
+    height: 300px;
+    background: var(--section-background-color);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
 }
 
-.content .message-box:focus-within .input-anim,
-.content .message-box.active-input .input-anim {
-    border: 1px solid green;
-}*/
-
-/*Si l'input est mal remplie*/
-.erreur {
-    border: 1px solid red !important;
+.open-popup {
+    visibility: visible !important;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
 }
 
-/*message d'erreur*/
-.visible {
-    display: block !important;
+#popup .popup-title {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 50px 0 10px;
+}
+
+#popup button {
+    width: 40%;
+    margin-top: 50px;
+    padding: 10px 0;
+    color: var(--font-text-color);
+    background: #0866ca;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 1000px) {
