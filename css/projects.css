@@ -219,6 +219,10 @@ hr {
     background-image: url("../image/reine.jpg");
 }
 
+.slide4 {
+    background-image: url("../image/todo_list.jpg");
+}
+
 .swiper-slide::after {
     content: "";
     background-image: inherit;
