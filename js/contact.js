@@ -10,8 +10,10 @@ window.addEventListener('load', () => {
 	
     // Dès qu'on va remplir l'input: fixe le label en haut
     inputsLabel.forEach((function (input) {
-        input.addEventListener('input', function (event) {
+		const inputTarget = input.parentElement;
+        inputTarget.addEventListener('input', function (event) {
             checkInputs();
+			console.log(inputTarget);
         })
     }))
 
@@ -96,11 +98,17 @@ window.addEventListener('load', () => {
 
 		
 		function sendEmail() {
+			/*if (condition) {
+				
+			} else {
+				
+			}*/
 			const mailContent = 'nom: ' + username.value + 
 					 '<br/> email: ' + email.value + 
 					 '<br/> message: ' + message.value;
 
 			Email.send({
+				SecureToken : "d63ec0f0-4669-4497-aa5f-09b2a9f17",
 				Host : "smtp.elasticemail.com",
 				Username : "peter.binate@gmail.com",
 				Password : "99DC38BD182AE88769F7DF76F765F66EA71F",
@@ -109,7 +117,7 @@ window.addEventListener('load', () => {
 				Subject : username.value + ' vous a envoyé un message depuis votre Portfolio',
 				Body : mailContent,
 			}).then(
-				message => alert(message),
+				//message => alert(message),
 				//Rénitialisation du formulaire après envois
 				form.reset()
 			
@@ -121,7 +129,7 @@ window.addEventListener('load', () => {
 
 		/*function sendEmail() {
 			Email.send({
-				SecureToken : "d63ec0f0-4669-4497-aa5f-09b2a9f17",
+				
 				Host: "smtp.gmail.com",
 				To : 'peter.binate@gmail.com',
 				From : "peter.binate@gmail.com",
