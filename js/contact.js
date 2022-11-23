@@ -113,7 +113,7 @@ window.addEventListener('load', () => {
 				Username : "peter.binate@gmail.com",
 				Password : "99DC38BD182AE88769F7DF76F765F66EA71F",
 				To : 'peter.binate@gmail.com',
-				From : email.value,
+				From : 'peter.binate@gmail.com',
 				Subject : username.value + ' vous a envoyé un message depuis votre Portfolio',
 				Body : mailContent,
 			}).then(
