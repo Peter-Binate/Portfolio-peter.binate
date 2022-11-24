@@ -223,6 +223,14 @@ hr {
     background-image: url("../image/todo_list.jpg");
 }
 
+.slide5 {
+    background-image: url("../image/one_page.jpg");
+}
+
+.slide6 {
+    background-image: url("../image/marvel_quizz.jpg");
+}
+
 .swiper-slide::after {
     content: "";
     background-image: inherit;
