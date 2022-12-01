@@ -79,7 +79,7 @@
     </div>
 
     <header>
-      <video id="videoBG" preload="none" poster="../image/background.jpg" autoplay muted loop>
+      <video id="videoBG" poster="../image/background.jpg" autoplay muted loop>
         <source src="video/background.mp4" type="video/mp4">
       </video>
 
@@ -515,8 +515,9 @@
       <div id="popup">
         <h2 class="popup-title">Merci!</h2>
         <p>Votre message a été envoyé avec succès. Je vous contacterai très rapidement.</p>
-        <!--button onclick="closePopup()" type="button">Fermer</button-->
+        <button id="popupButton" type="button">Fermer</button>
       </div>
+      <div id="overlay"></div>
     </section>
 
     <!--footer id="footer" class="footer">
