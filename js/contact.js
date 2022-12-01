@@ -122,14 +122,12 @@ window.addEventListener('load', () => {
 			const classUsername = username.parentElement.classList.value;
 			const classEmail = email.parentElement.classList.value;
 			const classMessageBox = message.parentElement.classList.value;
-			//const checkError = username.classList.contains("input-anim error");
-
+			
+			// On empêche l'envois de formulaire s'il est mal ou pas remplie
 			if (classUsername === "input-box active-input error" || classUsername === "" || classEmail === "input-box active-input error" || classEmail === "" || classMessageBox === "message-box active-input error" || classMessageBox === "" ) {
 				console.log("bad username");
 				console.log("classUsername: " + classUsername);
 			} else {
-				console.log("good username");
-				console.log(classUsername);
 				Email.send({
 					SecureToken : "d63ec0f0-4669-4497-aa5f-09b2a9f17",
 					Host : "smtp.elasticemail.com",
@@ -146,8 +144,5 @@ window.addEventListener('load', () => {
 					form.reset()
 				);
 			}
-			/*setTimeout(() => {
-				console.log("ok");
-			}, 3000)*/
 		}
 })
